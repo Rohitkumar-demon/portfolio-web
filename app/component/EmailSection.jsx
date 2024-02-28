@@ -5,7 +5,19 @@ import LinkedinIcon from "/public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useTrail, animated } from '@react-spring/web'
+
+
+
+
+
 export const EmailSection = () => {
+
+
+
+
+
+
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
