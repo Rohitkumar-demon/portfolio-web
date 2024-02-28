@@ -18,7 +18,7 @@ export const ProjectCard = ({
     //   href="/rohit"
     // >
     
-    <BackgroundGradient className="rounded-[22px] sm:p-1 bg-white dark:bg-zinc-900" >
+    // <BackgroundGradient className="rounded-[22px] sm:p-1 bg-white dark:bg-zinc-900" >
     <div>
       <div
         className="h-52 md:h-72  rounded-t-xl relative group"
@@ -44,7 +44,7 @@ export const ProjectCard = ({
         <p className="text-[#adb7be] ">{description}</p>
       </div>
     </div>
-    </BackgroundGradient>
+    // </BackgroundGradient>
   //   </PinContainer>
   //  </div>
   );
