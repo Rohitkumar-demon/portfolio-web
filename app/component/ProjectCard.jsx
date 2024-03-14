@@ -1,6 +1,8 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { BackgroundGradient } from "./background-gradient";
+import PinContainer from "./3d-pin";
 
 export const ProjectCard = ({
   imgUrl,
@@ -10,12 +12,19 @@ export const ProjectCard = ({
   previewUrl,
 }) => {
   return (
+    // <div className="h-[30rem]  flex justify-items items-center  ">
+    // <PinContainer
+    //   title="/rohit"
+    //   href="/rohit"
+    // >
+    
+    // <BackgroundGradient className="rounded-[22px] sm:p-1 bg-white dark:bg-zinc-900" >
     <div>
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
+        className="h-52 md:h-72  rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
-        <div className="overlay items-center justify-center  absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+        <div className="overlay items-center justify-center  absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 rounded-t-[10px] rounded-none  ">
           <Link
             href={gitUrl}
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
@@ -35,6 +44,9 @@ export const ProjectCard = ({
         <p className="text-[#adb7be] ">{description}</p>
       </div>
     </div>
+    // </BackgroundGradient>
+  //   </PinContainer>
+  //  </div>
   );
 };
 
